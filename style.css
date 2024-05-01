@@ -1,0 +1,342 @@
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+body {
+    margin: 0px;
+    font-family: "Epilogue";
+    min-height: 100vh;
+    background-color: var(--Almost-White);
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.left-nav>* {
+    margin-right: 30px;
+}
+
+.left-nav div {
+    display: flex;
+    align-items: center;
+}
+
+.left-nav img{
+    display: block;
+}
+
+.ar-down {
+    margin-left: 5px;
+}
+
+.left-nav p {
+    cursor: pointer;
+}
+
+.left-nav p:hover{
+    font-weight: bold;
+}
+
+.to-hover {
+    position: fixed;
+    flex-direction: column;
+    border: 1px black solid;
+    border-radius: 5px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--Almost-White);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.31);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.31);
+    top: 4.5rem;
+    left: 5rem;
+    visibility: hidden;
+}
+
+.to-hover-1{
+    position: fixed;
+    flex-direction: column;
+    border: 1px black solid;
+    border-radius: 5px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--Almost-White);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.31);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.31);
+    top: 4.3rem;
+    left: 16rem;
+    visibility: hidden;
+}
+
+#close-menu{
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#login{
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#register{
+    padding: 10px 18px 10px 18px;
+    width: 100%;
+    border: 1px black solid;
+    border-radius: 12px;
+    font-family: "Epilogue";
+    background-color: var(--Almost-White);
+    cursor: pointer;
+    text-align: center;
+}
+
+.features:hover{
+    .to-hover{
+        visibility: visible;
+    }
+    .to-hover:hover{
+        visibility: visible;
+    }
+}
+
+.company:hover{
+    .to-hover-1{
+        visibility: visible;
+    }
+    .to-hover-1{
+        visibility: visible;
+    }
+}
+
+.item{
+    cursor: pointer;
+}
+
+.item-1{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-1 p{
+    margin-left: 15px;
+}
+
+.to-hover img{
+    margin-right: 15px; 
+}
+
+.to-hover__down{
+    margin: 0 auto;
+    width: 170px;
+    max-width: 100%;
+    margin-left: 25px;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.to-hover__down p{
+    cursor: pointer;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.right-nav div {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.right-nav div:hover{
+    font-weight: bold;
+}
+
+.right-nav button {
+    padding: 10px 18px 10px 18px;
+    border: 1px black solid;
+    border-radius: 12px;
+    font-family: "Epilogue";
+    background-color: var(--Almost-White);
+    cursor: pointer;
+}
+
+.right-nav button:hover{
+    border: 2px black solid;
+    font-weight: bold;
+}
+
+.container, .sponsor{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 70rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.left-container{
+    width: 50%;
+}
+
+.left-container h1{
+    font-size: 5rem;
+    text-align: left;
+}
+
+.left-container p {
+    width: 70%;
+    margin-top: -20px;
+    line-height: 1.6;
+}
+
+.left-container button{
+    padding: 14px 20px 15px 20px;
+    border: 1px black solid;
+    border-radius: 12px;
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    font-family: "Epilogue";
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.left-container button:hover{
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black);
+}
+
+.right-container img{
+    width: 80%;
+    text-align: center;
+    padding-left: 100px;
+    user-select: none;
+}
+
+.right-container{
+    width: 50%;
+}
+
+.sponsor > *{
+    margin-right: 40px;
+}
+
+.three-line{
+    display: none;
+    z-index: 2;
+}
+
+.to-show{
+    position: fixed;
+    border: 1px black solid;
+    border: none;
+    background-color: var(--Almost-White);
+    top: 0px;
+    right: 0px;
+    padding: 25px;
+    height: 100%;
+    width: 210px;
+    max-width: 100%;
+    display: none;
+    z-index: 3;
+}
+
+.to-hover__up{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#careers, #about{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#careers{
+    margin-top: 30px;
+}
+
+.to-dark{
+    background-color: rgba(45, 45, 45, 0.8);
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 1;
+}
+
+@media screen and (max-width: 450px){
+    .container{
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+    }
+    .left-container p{
+        width: 200%;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        margin-left: -120px;
+    }
+    .left-container h1{
+        font-size: 2.7rem;
+        width: 100%;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -100px;
+    }
+    .right-container{
+        width: 100%;
+        margin: 0px;
+    }
+    .right-container img{
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+    }
+    .sponsor{
+        margin: 0px;
+        padding: 0px;
+        margin-left: -100px;
+    }
+    .sponsor img{
+        width: 30%;
+    }
+    .sponsor > *{
+        margin-right: 30px;
+    }
+    .three-line{
+        display: block;
+    }
+    .features, .company, #careers-nav, #about-nav, .right-nav, .options{
+        display: none;
+        visibility: hidden;
+    }
+}
