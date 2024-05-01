@@ -264,6 +264,16 @@ body {
     z-index: 3;
 }
 
+.to-show button{
+    padding: 10px 18px 10px 18px;
+    border: 1px black solid;
+    border-radius: 12px;
+    font-family: "Epilogue";
+    background-color: var(--Almost-White);
+    cursor: pointer;
+    width: 100%
+}
+
 .to-hover__up{
     display: flex;
     align-items: center;
